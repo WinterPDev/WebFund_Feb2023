@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Submission Form</title>
+</head>
+
+<body>
+    <!-- ========================================================================
+    DISCLAIMER: THIS WEBSITE USES INLINE STYLING!
+    DO NOT USE THIS AFTER WE LEARN HOW TO DO CSS TOMORROW . . . OR ELSE!
+    (╯‵□′)╯︵┻━┻   
+    =============================================================================
+-->
+
+    <h1>
+        <img width="100px" src="./static/cat.png" alt="Cat Unicorn?">
+        Video Form Submissions!
+    </h1>
+
+    <table border="2">
+        <tr>
+            <th>Trending Video Tags</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Kittens</td>
+            <td>Like Cats, but smaller.</td>
+        </tr>
+        <tr>
+            <td>Puppies</td>
+            <td>Chewing machines without object permanence.</td>
+        </tr>
+    </table>
+
+    <video width="200px" muted autoplay loop>
+        <source src="./static/pexels-talha-dursun-marko-9627816.mp4" type="video/mp4">
+        Video not supported in your browser!
+    </video>
+
+    <p>Video Source:
+        <a href="https://www.pexels.com/video/playful-kittens-in-a-chair-9627816/">Pexels Video Link</a>
+    </p>
+
+    <form action="#">
+        <div>
+            <label for="Video File">Choose Video File:</label>
+            <input type="file" name="Video File" id="videofile">
+        </div>
+        <hr width="300" align="left">
+        <div>
+            <p>Video Format :</p>
+            <!-- MP4 Option =============================================== -->
+            <label for="format">MP4</label>
+            <input type="radio" name="format" id="mp4" value="mp4">
+            <!-- WebM Option ============================================== -->
+            <label for="format">WebM</label>
+            <input type="radio" name="format" id="webm" value="webm">
+            <!-- Mov Option ============================================== -->
+            <label for="format">Mov</label>
+            <input type="radio" name="format" id="mov" value="mov">
+        </div>
+        <hr width="300" align="left">
+        <select name="subject">
+            <option disabled selected>-- CHOOSE A SUBJECT --</option>
+            <option value="Dogs">Dogs</option>
+            <option value="Cats">Cats</option>
+            <option value="Other">Other</option>
+        </select>
+        <hr width="300" align="left">
+
+        <input type="submit" value="Submit Form">
+    </form>
+
+
+
+</body>
+
+</html>

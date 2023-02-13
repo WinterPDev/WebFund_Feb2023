@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More and More HTML!</title>
+</head>
+
+<body>
+    <h1>
+        <img src="./static/cat.png" alt="Unicorn Cat" width="100px">
+        Video Submissions Form
+    </h1>
+    <!-- ========================================================================
+    DISCLAIMER: THIS WEBSITE USES INLINE STYLING!
+    DO NOT USE THIS AFTER WE LEARN HOW TO DO CSS TOMORROW . . . OR ELSE!
+    (╯‵□′)╯︵┻━┻   
+    =============================================================================
+-->
+    <table border="1">
+        <tr>
+            <th>Trending Video Tags</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Kittens</td>
+            <td>Like Cats, but smaller.</td>
+        </tr>
+        <tr>
+            <td>Puppies</td>
+            <td>Chewing machines without object permanence.</td>
+        </tr>
+    </table>
+    <hr width="600" align="left">
+    <div>
+        <video width="300px" src="./static/pexels-talha-dursun-marko-9627816.mp4" controls muted>
+            <source src="./static/pexels-talha-dursun-marko-9627816.mp4" type="video/mp4">
+            Your video doesn't support the video tag!
+        </video>
+        <p>Video Credit: <a href="https://www.pexels.com/video/playful-kittens-in-a-chair-9627816/">Pexels Stock
+                Video</a>
+        </p>
+    </div>
+    <hr width="300" align="left">
+    <form action="#">
+        <div>
+            <label>Video:</label>
+            <input type="file" name="video">
+        </div>
+        <hr width="300" align="left">
+        <div>
+            <h3>File Format:</h3>
+            <!-- Mp4 Option -->
+            <label for="mp4">MP4</label>
+            <input type="radio" name="format" id="mp4" value="mp4">
+            <!-- Webm Option -->
+            <label for="webm">WEBM</label>
+            <input type="radio" name="format" id="webm" value="webm">
+            <!-- Mov Option -->
+            <label for="webm">MOV</label>
+            <input type="radio" name="format" id="mov" value="mov">
+        </div>
+        <hr width="300" align="left">
+        <div>
+            <label for="Subject">Subject of Video:</label>
+            <select name="Subject" id="Subject">
+                <option value="Dogs">Dogs</option>
+                <option value="Cats">Cats</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <hr width="300" align="left">
+        <input type="submit" value="Submit Form">
+    </form>
+
+</body>
+
+</html>
