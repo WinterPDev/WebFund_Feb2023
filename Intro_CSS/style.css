@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* 
+selector/what are we changing? {
+    CSS Rules to style the thing we select
+}
+*/
+
+/* 
+Priority Levels of Selectors:
+-1 - Wildcard selector
+0 - "Generic" such as li
+1 - class such as '.text-red'
+2 - id is highest priority!
+*/
+
+
+
+li {
+    color: hotpink;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-red {
+    color: red;
+}
+
+/* 
+Descendant Selector: Start point | child element
+*/
+
+.text-red li {
+    color: red;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+.text-blue {
+    color: blue;
+}
+
+
+.header-text {
+    font-size: 3.1em;
+}
+
+/* 
+
+When using an id: ELEMENTS CAN ONLY HAVE ONE ID. 
+Only use each id once per document/page!
+
+*/
+
+#text-green {
+    color: green;
+    background-color: black;
+}
