@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
+* {
+    font-family: 'Balsamiq Sans', cursive;
+    /* CSS Resets */
+    margin: 0;
+    padding: 0;
+    border: 1px red dotted;
+
+}
+
+/* 
+    Flex, applied from the parent, will make the child elements next to each other.
+    Flex also gives us accesss to:
+        - justify-content: Controls for the horizontal spacing of elements
+        - align-items: Controls for the vertical spacing of elements!
+
+    Flex property, which allows us to fractionally split up the page into proportional parts
+
+    Always make sure you have display: flex on the same "level"/ in the same class as align-items and justify-content or else they DO NOT WORK.
+
+    */
+
+.flexed {
+    display: flex;
+}
+
+.ai-center {
+    align-items: center;
+}
+
+.jc-spacebetween {
+    justify-content: space-between;
+}
+
+.jc-spacearound {
+    justify-content: space-around;
+}
+
+.jc-spaceevenly {
+    justify-content: space-evenly;
+}
+
+.box {
+    background-color: darkslategray;
+    height: 200px;
+    width: 200px;
+    border: 2px black solid;
+}
+
+.box2 {
+    background-color: darkslategray;
+    height: 100px;
+    width: 100px;
+    border: 2px black solid;
+}
+
+.col-container {
+    background-color: blanchedalmond;
+    display: flex;
+    width: 80%;
+    height: 1000px;
+    padding: 10px;
+}
+
+.col-1 {
+    flex: 1;
+    background-color: aqua;
+}
+
+.col-2 {
+    flex: 3;
+    background-color: cadetblue;
+}
+
+.gapped {
+    gap: 30px;
+}
