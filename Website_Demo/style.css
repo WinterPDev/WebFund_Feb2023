@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px red dotted; */
+}
+
+
+li {
+    list-style: none;
+}
+
+
+.btn {
+    background-color: red;
+    border-radius: 5px;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+    border: none;
+}
+
+.navbar {
+    /* top: 0px;
+    position: fixed; */
+    height: 100px;
+}
+
+
+
+.navbar-top {
+    /* background-color: teal; */
+    /* height: 50%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    background-color: red;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 90px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+    padding-right: 30px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.navbar-bot {
+    border-top: 1px lightgrey solid;
+    border-bottom: 1px lightgrey solid;
+    /* background-color: rgb(111, 147, 147); */
+    /* height: 50%; */
+    justify-content: center;
+    padding: 10px;
+}
+
+.navbar-links li {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.spotlight {
+    height: 500px;
+    background-color: crimson;
+    padding-top: 40px;
+    background: rgb(153, 34, 195);
+    background: linear-gradient(0deg, rgba(153, 34, 195, 1) 0%, rgba(45, 253, 216, 1) 100%);
+}
+
+.spotlight-img {
+    margin: 0 auto;
+    display: block;
+
+}
+
+.spotlight-details {
+    padding-left: 3%;
+    padding-right: 3%;
+    /* height: 100px; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spotlight-details-left {
+    display: flex;
+    align-items: center;
+    font-size: 1.7em;
+    font-weight: bold;
+    gap: 20px;
+}
+
+.featured {
+    gap: 100px;
+    display: flex;
+    height: 300px;
+    background-color: antiquewhite;
+}
+
+.featured-box {
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 15px;
+}
