@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <p class="title">JS Events</p>
+
+
+    <div class="box m-center">
+        <button class="btn" onclick="showPopup('Alert From JS! Custom!')">Click For an Alert!</button>
+        <hr>
+        <h2>Mouse over the picture below to change it!</h2>
+        <!-- this keyword passes the element it's attatched to into the JS -->
+        <img src="./images/scyther.png" alt="Scyther" onmouseover="evolvePokemon(this)"
+            onmouseout="devolvePokemon(this)">
+    </div>
+
+
+    <button class="btn" onclick="changeButton(this)">
+        Click to change Text!
+    </button>
+    <button class="btn" onclick="deleteButton(this)">
+        Click to Delete Button!
+    </button>
+
+    <!-- The script element always goes at the bottom of the body element! -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
