@@ -1,0 +1,47 @@
+
+Exam is to test core competencies with HTML, CSS, JS.
+
+The Exam has no surprises, no esoteric word problems, 
+or any sort of logic puzzles/problem prompts.
+
+Eligability:
+1. 100% core assignment completion. (Code must be valid!)
+2. Have a code review completed before Exam day!
+3. Attendance 80%
+
+Passing score: 8/10
+Time to Complete: 5 hours
+
+
+Validate HTML: https://validator.w3.org/nu/#textarea
+All files included - Any icons, etc. will be provided!
+Overall Quality (instructor discretion)
+
+All content align with wireframe. (All content on the page!)
+Correct HTML tag usage.
+(For example: Not using tables to style the page!)
+
+
+Javascript functions are the biggest impact on your score!
+JS has no wiggle room! It either works or it doesn't!
+
+When you're about 30 minutes from running out of time: double check you have JS working!
+
+
+Grading Process
+
+Grading is only final after the time is up!
+
+Ping for grading in the Discord
+Your instructor/TA will arrive in your breakout room.
+
+
+#1 COMMUNICATION ABOUT ANY ISSUES OR QUESTIONS
+
+Join the Zoom at 9 AM MST
+Get exam code from email
+Short Q&A before exams
+
+Go to break out rooms (1 person per room)
+Submit the exam code BEFORE 10 AM MST
+Be on Zoom for the ENTIRE exam duration
