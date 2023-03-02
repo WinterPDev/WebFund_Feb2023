@@ -1,13 +1,12 @@
 console.log('JS Online!')
-
 // Global variables for our HTML elements:
-var pImage1 = document.querySelector('#pImage1');
-var pImage2 = document.querySelector('#pImage2');
-var pImage3 = document.querySelector('#pImage3');
+// var pImage1 = document.querySelector('#pImage1');
+// var pImage2 = document.querySelector('#pImage2');
+// var pImage3 = document.querySelector('#pImage3');
 
-var pName1 = document.querySelector('#pName1');
-var pName2 = document.querySelector('#pName2');
-var pName3 = document.querySelector('#pName3');
+// var pName1 = document.querySelector('#pName1');
+// var pName2 = document.querySelector('#pName2');
+// var pName3 = document.querySelector('#pName3');
 // ============================================================
 
 
@@ -15,38 +14,44 @@ var pName3 = document.querySelector('#pName3');
 
 // async = asynchronous
 // We use the async decorator to access other functionalities: namely await!
-async function getPokeData() {
-    var gymStarters = ['mawile', 'dugtrio', 'raikou'];
-    // await doesn't allow the code to continue until it resolves the code line.
-    var response = await fetch("https://pokeapi.co/api/v2/pokemon/" + gymStarters[0]);
-    // response is what the server tells us (Typically a success or fail)
-    var pokeData = await response.json();
+async function getPokeData(ids) {
 
-    // bidoof
-    // dugtrio
-    // raikou
-
-    // Java Script Object Notation
-
-    console.log(pokeData.name);
-
-    pName1.innerText += pokeData.name
-
-    pImage1.src = pokeData.sprites.front_shiny
-
-
-    response = await fetch("https://pokeapi.co/api/v2/pokemon/" + gymStarters[1]);
-    pokeData = await response.json();
-
-    pName2.innerText += pokeData.name;
-    pImage2.src = pokeData.sprites.front_shiny
-
-    response = await fetch("https://pokeapi.co/api/v2/pokemon/" + gymStarters[2]);
-    pokeData = await response.json();
-
-    pName3.innerText += pokeData.name;
-    pImage3.src = pokeData.sprites.front_shiny
+    for (let i = 0; i < ids.length; i++) {
+        await fetch("https://pokeapi.co/api/v2/pokemon/" + ids[i])
+            .then(response => response.json())
+            .then(resJSON => {
+                // data.push(resJSON);
+                data.push(setPokemon(resJSON))
+            })
+    }
 }
 
-// getPokeData();
+function setHTML(pNames) {
+    var display = document.querySelector('#pDisplay');
 
+    for (let i = 0; i < pNames.length; i++) {
+
+        display.innerText += pNames[i].name;
+
+    }
+
+}
+
+function setPokemon(obj) {
+    let poke = {
+        id: obj.id,
+        name: obj.name,
+        types: obj.types
+    }
+
+    return poke;
+}
+
+var data = [];
+
+// getPokeData();
+// getPokeData().then(() => setHTML(data[0].name));
+getPokeData([1, 2])
+    .then(() => {
+        setHTML(data)
+    })

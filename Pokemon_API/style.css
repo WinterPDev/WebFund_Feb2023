@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: darkslateblue;
+    background-color: slategrey;
+    color: white;
 }
 
 h1 {
@@ -18,7 +19,7 @@ h1 {
 }
 
 .container {
-    width: 80%;
+    width: 30%;
     display: flex;
     border: 2px solid black;
     border-radius: 20px;

@@ -1,0 +1,9 @@
+Quiz Game Website
+
+Wordle/Word Guessing Game (League of Legends Themed)
+
+Board Game (Tic Tac Toe)
+
+RPG (Text-Based)
+
+Card Game (Like Yugioh/PokemonTCG)

@@ -41,7 +41,11 @@ function howMany(i, j, element) {
     }
 
     for (let row = i - 1; row <= i + 1 && row < theDojo3.length; row++) {
+
+
         if (row >= 0) { // make sure row does not leave the grid
+
+
             for (var col = j - 1; col <= j + 1 && col < theDojo3[0].length; col++) {
                 if (!(row === i && col === j) && col >= 0) { // Ignore the selected square and make sure column does not leave the grid
                     total += theDojo3[row][col]
